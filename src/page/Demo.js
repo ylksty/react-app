@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import LikeButton from './LikeButton';
-import Computer from './Computer';
-import LessonsList from './LessonsList';
+import LikeButton from './demo/LikeButton';
+import Computer from './demo/Computer';
+import LessonsList from './demo/LessonsList';
+import Percentage from './demo/Percentage';
 
 class Demo extends Component {
   render () {
@@ -38,6 +39,11 @@ class Demo extends Component {
             </td>
             <td>
             </td>
+          </tr>
+          <tr>
+            <td>Percentage</td>
+            <td><Percentage /></td>
+            <td></td>
           </tr>
         </tbody>
       </table>

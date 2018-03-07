@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Demo from './Demo';
+import Demo from './page/Demo';
 
 import registerServiceWorker from './registerServiceWorker';
 
