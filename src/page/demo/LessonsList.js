@@ -11,7 +11,7 @@ class Lesson extends Component {
   render () {
     return (
       <div onClick={() => { console.log(`${this.props.index}-${this.props.lesson.title}`) }}>
-        <h1>{this.props.lesson.title}</h1>
+        <h4>{this.props.lesson.title}</h4>
         <p>{this.props.lesson.description}</p>
       </div>
     );

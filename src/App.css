@@ -19,7 +19,20 @@
 }
 
 .App-intro {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
   font-size: large;
+}
+
+.App-intro .ul-list {
+  list-style: none;
+}
+
+.App-intro .ul-list li {
+  float: left;
+  margin-left: 10px;
 }
 
 @keyframes App-logo-spin {
