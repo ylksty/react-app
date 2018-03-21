@@ -9,6 +9,7 @@ import './App.css';
 
 import Demo from './page/Demo';
 import ReactRouter from './page/ReactRouter';
+import ReduxDemo from './page/redux/Demo';
 
 class App extends Component {
   render() {
@@ -23,10 +24,12 @@ class App extends Component {
             <ul className="ul-list">
               <li><Link to="/">首页</Link></li>
               <li><Link to="/demo">demo</Link></li>
-              <li><Link to="/ReactRouter">react-router</Link></li>
+              <li><Link to="/reactRouter">react-router</Link></li>
+              <li><Link to="/reduxDemo">Redux</Link></li>
             </ul>
             <Route path="/demo" component={Demo}/>
             <Route path="/reactRouter" component={ReactRouter}/>
+            <Route path="/reduxDemo" component={ReduxDemo}/>
           </div>
         </div>
       </Router>
