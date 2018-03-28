@@ -25,11 +25,11 @@ class App extends Component {
               <li><Link to="/">首页</Link></li>
               <li><Link to="/demo">demo</Link></li>
               <li><Link to="/reactRouter">react-router</Link></li>
-              <li><Link to="/reduxDemo">Redux</Link></li>
+              <li><Link to="/redux">Redux</Link></li>
             </ul>
             <Route path="/demo" component={Demo}/>
-            <Route path="/reactRouter" component={ReactRouter}/>
-            <Route path="/reduxDemo" component={ReduxDemo}/>
+            <Route path="/reactRouter" component={ReactRouter} />
+            <Route path="/redux" component={ReduxDemo} />
           </div>
         </div>
       </Router>
