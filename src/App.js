@@ -10,16 +10,19 @@ import logo from './logo.svg';
 import './App.css';
 
 import Demo from './page/Demo';
-import ReactRouter from './page/ReactRouter';
 import ReduxDemo from './page/redux/Demo';
 
 const store = configureStore()
 
 class App extends Component {
+  getConfirmation (message, callback) {
+    const allowTransition = window.confirm(message)
+    callback(allowTransition)
+  }
   render() {
     return (
       <Provider store={store}>
-        <Router>
+        <Router getUserConfirmation={this.getConfirmation('abc', function(s) {alert(s);})}>
           <div className="App">
             <header className="App-header">
               <img src={logo} className="App-logo" alt="logo" />
@@ -29,11 +32,9 @@ class App extends Component {
               <ul className="ul-list">
                 <li><Link to="/">首页</Link></li>
                 <li><Link to="/demo">demo</Link></li>
-                <li><Link to="/reactRouter">react-router</Link></li>
                 <li><Link to="/redux">Redux</Link></li>
               </ul>
               <Route path="/demo" component={Demo}/>
-              <Route path="/reactRouter" component={ReactRouter} />
               <Route path="/redux" store={store} component={ReduxDemo} />
             </div>
           </div>
