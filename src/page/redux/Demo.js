@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import DevTools from '../../containers/DevTools'
 
 class Demo extends Component {
   render () {
@@ -27,7 +26,6 @@ class Demo extends Component {
             </tr>
             </tbody>
           </table>
-          <DevTools />
         </div>
     )
   }
