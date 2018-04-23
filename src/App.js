@@ -12,6 +12,7 @@ import './App.css';
 import Demo from './page/Demo';
 import ReduxDemo from './page/redux/Demo';
 import RouterDemo from './page/router/Demo';
+import reactBasicDemo from './page/Basic';
 
 const store = configureStore()
 
@@ -35,10 +36,12 @@ class App extends Component {
                 <li><Link to="/demo">demo</Link></li>
                 <li><Link to="/redux">Redux</Link></li>
                 <li><Link to="/reduxRouter">ReduxRouter</Link></li>
+                <li><Link to="/reactBasic">ReactBasic</Link></li>
               </ul>
               <Route path="/demo" component={Demo}/>
               <Route path="/redux" store={store} component={ReduxDemo} />
               <Route path="/reduxRouter" store={store} component={RouterDemo} />
+              <Route path="/reactBasic" store={store} component={reactBasicDemo} />
             </div>
           </div>
         </Router>
